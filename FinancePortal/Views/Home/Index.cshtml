@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Make Transaction</h1>
+</div>
+
+<div class="form-group text-center">
+    <button class="btn btn-primary btn-lg mt-3" onclick="location.href='@Url.Action("CreateTransaction", "Transaction")'">
+        Create Transaction
+    </button>
+</div>

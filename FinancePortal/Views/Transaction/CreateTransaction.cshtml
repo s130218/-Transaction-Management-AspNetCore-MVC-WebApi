@@ -1,0 +1,30 @@
+﻿@model FinancePortal.Dtos.TransactionDto
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Create Transaction</h2>
+    <form asp-controller="Transaction" asp-action="CreateTransaction" method="post" class="needs-validation" novalidate>
+        <div class="form-group col-md-6 mx-auto">
+            <div class="form-group">
+                <label asp-for="Amount" class="font-weight-bold mb-2">Amount</label>
+                <input asp-for="Amount" type="number" step="0.01" class="form-control form-control-lg" placeholder="Enter the amount" required />
+                <div class="invalid-feedback">
+                    Please enter a valid amount.
+                </div>
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AccountNumber" class="font-weight-bold mb-2">Account Number</label>
+                <input asp-for="AccountNumber" type="text" class="form-control form-control-lg" placeholder="Enter the account number" required />
+                <div class="invalid-feedback">
+                    Please enter a valid account number.
+                </div>
+                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-lg mt-3">Submit Transaction</button>
+        </div>
+    </form>
+</div>
