@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "FinanceService.Controllers.TransactionController",
+    "Method": "AddTransactionAsync",
+    "RelativePath": "v1/transaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "FinanceService.Dtos.TransactionCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinanceService.Controllers.TransactionController",
+    "Method": "CheckStatusByTransactionAsync",
+    "RelativePath": "v1/transaction/{transactionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FinanceService.Dtos.TransactionLogsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
