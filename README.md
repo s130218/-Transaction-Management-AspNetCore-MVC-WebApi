@@ -7,10 +7,10 @@ This repository consists of two projects:
 
 - **Technologies Used**
 
-- ASP.NET Core MVC
-- ASP.NET Core WebAPI
-- Entity Framework Core
-- SQL Server
+  - ASP.NET Core MVC
+  - ASP.NET Core WebAPI
+  - Entity Framework Core
+  - SQL Server
 
 
 **Features**
@@ -23,31 +23,31 @@ This repository consists of two projects:
 
 - **Status Enums**
 
-- Success = 0,
-- Failed = 1,
-- Pending = 2
+  - Success = 0,
+  - Failed = 1,
+  - Pending = 2
 
 
 **CheckStatus Utility:**
 
-- Monitors Pending transactions in the Transaction table caused by timeouts.
-- Updates the status in the Transaction table based on the corresponding log in the TransactionLogs table.
-- If the transaction exists in the TransactionLogs table as Success or Failed, the Transaction table is updated accordingly.
-- Ensures consistency between Transaction and TransactionLogs
+  - Monitors Pending transactions in the Transaction table caused by timeouts.
+  - Updates the status in the Transaction table based on the corresponding log in the TransactionLogs table.
+  - If the transaction exists in the TransactionLogs table as Success or Failed, the Transaction table is updated accordingly.
+  - Ensures consistency between Transaction and TransactionLogs
 
 **Transaction Management**
 
-- Users can initiate transactions with an amount and bank account details.
-- Handles three transaction statuses:
-- Success: The transaction is completed successfully.
-- Failed: The transaction failed due to issues like connection refusal.
-- Pending: The transaction is delayed due to a timeout.
+  - Users can initiate transactions with an amount and bank account details.
+  - Handles three transaction statuses:
+  - Success: The transaction is completed successfully.
+  - Failed: The transaction failed due to issues like connection refusal.
+  - Pending: The transaction is delayed due to a timeout.
 
 
 - **Database Design**
 
-- Transaction Table (FinancePortal Project): Tracks all transactions with statuses, including Pending.
-- TransactionLogs Table (FinanceService Project): Logs only Success or Failed statuses.
+  - Transaction Table (FinancePortal Project): Tracks all transactions with statuses, including Pending.
+  - TransactionLogs Table (FinanceService Project): Logs only Success or Failed statuses.
 
 ---
 
