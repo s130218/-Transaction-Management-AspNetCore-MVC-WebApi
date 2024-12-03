@@ -15,7 +15,7 @@ This repository consists of two projects:
 
 **Features**
 
-- Transaction statuses include Success, Failed, and Pending.
+- Transaction status include Success, Failed, and Pending.
 - Handles scenarios like connection timeout and connection refused:
 - Timeout: Status set to Pending (saved in Transaction table only).
 - Connection Refused: Status set to Failed.
