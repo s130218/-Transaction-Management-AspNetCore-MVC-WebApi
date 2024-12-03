@@ -40,24 +40,32 @@ This repository consists of two projects:
 ---
 
 Home Page
-![home_page](https://github.com/user-attachments/assets/f9aa7ad6-cb26-4bb3-a052-151b66991403)
+
+![home_page](https://github.com/user-attachments/assets/8f858cd1-881c-4855-9778-869de1840a03)
 
 ---
 
 Create Transaction Page
-![create_transaction](https://github.com/user-attachments/assets/f13d9aa5-f48a-4611-a14c-2828d869459d)
+
+![create_transaction](https://github.com/user-attachments/assets/572acdca-b4fb-4b1f-a67c-81334b9e78bf)
 
 ---
 
 Transaction Detail Page
-![transaction_details](https://github.com/user-attachments/assets/096ebca6-0001-485a-9320-26b937ed77eb)
+
+![transaction_details](https://github.com/user-attachments/assets/5a8018c4-b00d-46be-8a2a-7f7ee2a109b4)
 
 ---
 
 Checkstatus Page
-![checkstatus](https://github.com/user-attachments/assets/0d6747e1-b25d-46ca-be58-731e35425a1a)
+
+![checkstatus](https://github.com/user-attachments/assets/3400f034-ed67-421a-84ab-614cae439dce)
 
 ---
 
 Checkstatus Connection Refused
-![checkstatus_connectionrefused](https://github.com/user-attachments/assets/d648ccac-629e-4cc0-bfc9-2deeee758057)
+
+![checkstatus_connectionrefused](https://github.com/user-attachments/assets/c8a88387-3b61-4d36-88ba-2c55e2dc91eb)
+
+---
+
