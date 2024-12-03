@@ -1,0 +1,44 @@
+﻿@using FinancePortal.Enum
+@model List<FinancePortal.Models.Transaction>
+
+<h1>Transaction Details</h1>
+@if (Model != null && Model.Any())
+
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>TransactionId</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in Model)
+
+            {
+                <tr>
+                    <td>@transaction.TransactionId</td>
+                    <td>@transaction.Amount</td>
+                    <td>@transaction.Status</td>
+                    <td>
+                        @if (transaction.Status == TransactionStatus.PENDING)
+                        {
+                            <form method="post" asp-action="CheckStatus">
+                                <input type="hidden" name="TransactionId" value="@transaction.TransactionId" />
+                                <button type="submit" class="btn btn-info">Check Status</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+else
+
+{
+    <p>No transactions available.</p>
+}

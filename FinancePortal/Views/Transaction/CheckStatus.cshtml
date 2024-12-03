@@ -1,0 +1,55 @@
+﻿@model FinancePortal.Dtos.CheckStatusDto
+
+@{
+    ViewBag.Title = "Check Transaction Status";
+}
+
+<div class="container mt-5">
+    @if (TempData["success"] != null)
+    {
+        <div class="alert alert-success text-center" role="alert">
+            @TempData["success"]
+        </div>
+    }
+
+    <h2 class="text-center mb-4">Check Transaction Status</h2>
+    <form asp-controller="Transaction" asp-action="CheckStatus" method="post" class="needs-validation" novalidate>
+        <div class="form-group col-md-6 mx-auto">
+            <div class="form-group">
+                <label asp-for="TransactionId" class="font-weight-bold mb-2">Check Status</label>
+                <input asp-for="TransactionId" type="text" class="form-control form-control-lg" placeholder="Enter the transcation id" required />
+                <div class="invalid-feedback">
+                    Please enter a valid account number.
+                </div>
+                <span asp-validation-for="TransactionId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-lg mt-3">Check Status</button>
+        </div>
+    </form>
+</div>
+
+
+@if (ViewBag.TransactionId != null)
+{
+    <div class="container mt-5">
+
+        <h2 class="text-danger">Transaction Pending</h2>
+        <p>Your transaction with ID <strong>@ViewBag.TransactionId</strong> is currently pending. Please check back later for updates.</p>
+
+    </div>
+}
+
+
+
+@if (TempData["error"] != null && TempData["TransactionId"] != null)
+
+{
+    <script type="text/javascript">
+        var errorMessage = '@TempData["error"]';
+        var transactionId = '@TempData["TransactionId"]';
+        alert(errorMessage + "\nTransaction ID: " + transactionId);
+    </script>
+}
