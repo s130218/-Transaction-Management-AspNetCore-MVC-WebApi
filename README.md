@@ -20,7 +20,14 @@ This repository consists of two projects:
 - Timeout: Status set to Pending (saved in Transaction table only).
 - Connection Refused: Status set to Failed.
 - TransactionLogs: Logs only Success or Failed transactions.
-  
+
+- **Status Enums**
+
+- Success = 0,
+- Failed = 1,
+- Pending = 2
+
+
 **CheckStatus Utility:**
 
 - Monitors Pending transactions in the Transaction table caused by timeouts.
