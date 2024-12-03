@@ -50,8 +50,9 @@ This repository consists of two projects:
   - TransactionLogs Table (FinanceService Project): Logs only Success or Failed statuses.
 
 ---
-Code Highlights
-The transaction status is determined based on randomized scenarios. For example:
+
+**Code Highlights**
+- The transaction status is determined based on randomized scenarios. For example:
 
 
 ![image](https://github.com/user-attachments/assets/2ef99b1f-39a6-474b-8f53-480bb4aa04e5)
